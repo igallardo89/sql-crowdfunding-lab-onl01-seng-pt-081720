@@ -1,18 +1,4 @@
-# Write your sql queries in this file in the appropriate method like the example below:
-CREATE TABLE projects (
-  id INTEGER PRIMARY KEY,
-  title TEXT,
-  category TEXT,
-  funding_goal INTEGER,
-  start_date DATE,
-  end_date DATE
-  );
-  
-CREATE TABLE users (
-  id INTEGER PRIMARY KEY,
-  name TEXT,
-  age INTEGER
-  );
+# Write your sql queries in this file in the appropriate method like the example below
   
 # def select_category_from_projects
 # "SELECT category FROM projects;"
