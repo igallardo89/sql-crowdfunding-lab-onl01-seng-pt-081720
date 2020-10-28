@@ -1,5 +1,19 @@
 # Write your sql queries in this file in the appropriate method like the example below:
-
+CREATE TABLE projects (
+  id INTEGER PRIMARY KEY,
+  title TEXT,
+  category TEXT,
+  funding_goal INTEGER,
+  start_date DATE,
+  end_date DATE
+  );
+  
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY,
+  name TEXT,
+  age INTEGER
+  );
+  
 # def select_category_from_projects
 # "SELECT category FROM projects;"
 
@@ -26,7 +40,7 @@ def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_
 end
 
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
-  "SELECT project.title
+  "SELECT projects.title, project.funding_goal
    "
 end
 
